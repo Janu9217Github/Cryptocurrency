@@ -20,8 +20,8 @@ def main():
         last_original_values = np.random.rand(pred_days)
         next_predicted_values = last_original_values.copy()  # Use the same values for prediction
         new_pred_plot = pd.DataFrame({
-            'Last 15 days close price': last_original_values,
-            'Predicted next 1 day close price': next_predicted_values
+            'Original price': last_original_values,
+            'Predicted price': next_predicted_values
         })
 
         st.write(new_pred_plot)
